@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Calculator</title>
+
+	<!-- this is bootsrap cdn -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+	<!-- this is CSS file for the Project -->
+	<style>
+		@import url(JQueryAsses.css);
+	</style>
+
+	<!-- this is javascript for the project -->
+	<script src="JqueryAsses.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+	<section class="row mt-4 pt-4">
+		<div class="col-4 offset-4 rounded bg-light text-dark text-center">
+			<span class="fw-bold fs-1">CALCULATOR</span> <br> JAINAM SAKARIYA
+		</div>
+
+	</section>
+	<div class="calculator rounded">
+		
+		<div class="main-div">
+				<div class="up-space">DEG</div>
+				<input type="text" class="ip-scr" id="screen1" placeholder="0">
+			<div class="col-12 keyboard rounded">
+				<button class="btn btn-dark dark-but" onclick="allclear()">AC</button>
+				<button class="btn btn-dark dark-but" onclick="allclear()">DEL</button>
+				<button class="btn btn-dark dark-but" onclick="input('(')">(</button>
+				<button class="btn btn-dark dark-but" onclick="input(')')">)</button>
+				<button class="btn btn-light dark-but" onclick="input('7')">7</button>
+				<button class="btn btn-light dark-but" onclick="input('8')">8</button>
+				<button class="btn btn-light dark-but" onclick="input('9')">9</button>
+				<button class="btn btn-dark dark-but" onclick="input('/')">/</button>
+				<button class="btn btn-light dark-but" onclick="input('4')">4</button>
+				<button class="btn btn-light dark-but" onclick="input('5')">5</button>
+				<button class="btn btn-light dark-but" onclick="input('6')">6</button>
+				<button class="btn btn-dark dark-but" onclick="input('*')">*</button>
+				<button class="btn btn-light dark-but" onclick="input('1')">1</button>
+				<button class="btn btn-light dark-but" onclick="input('2')">2</button>
+				<button class="btn btn-light dark-but" onclick="input('3')">3</button>
+				<button class="btn btn-dark dark-but" onclick="input('-')">-</button>
+				<button class="btn btn-light dark-but" onclick="input('.')">.</button>
+				<button class="btn btn-light dark-but" onclick="input('0')">0</button>
+				<button class="btn btn-dark dark-but" onclick="calc('')">=</button>
+				<button class="btn btn-dark dark-but" onclick="input('+')">+</button>
+			</div>
+		</div>
+
+			
+	</div>
+	
+</body>
+
+</html>
